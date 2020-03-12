@@ -1,1 +1,1 @@
-export const siteUrl = "https://gridsome-portfolio-starter.netlify.com";
+export const siteUrl = "https://karimdxy.github.io";
