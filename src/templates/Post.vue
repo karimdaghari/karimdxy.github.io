@@ -44,6 +44,7 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import { siteUrl } from "../../constants";
 export default {
 	metaInfo() {
 		return {
@@ -53,7 +54,7 @@ export default {
 	},
 	computed: {
 		tweetText() {
-			return this.$route.path;
+			return siteUrl + this.$route.path;
 		}
 	}
 };

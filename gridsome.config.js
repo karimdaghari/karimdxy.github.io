@@ -8,13 +8,13 @@ const tailwind = require("tailwindcss");
 const purgecss = require("@fullhuman/postcss-purgecss");
 
 const postcssPlugins = [tailwind()];
-
+import { siteUrl } from "./constants";
 if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {
 	siteName: "Karim",
 	siteDescription: "Karim (@karimdxy)'s blog",
-	siteUrl: "https://gridsome-portfolio-starter.netlify.com",
+	siteUrl,
 	plugins: [
 		{
 			use: "@gridsome/vue-remark",
