@@ -4,7 +4,7 @@
 			class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
 		>
 			<div class="mb-8 lg:mb-0">
-				<div>&copy; {{ new Date().getFullYear() }}</div>
+				<div>&copy; {{ new Date().getFullYear() }} - Tunisia</div>
 				<div class="hidden">
 					<a href="/rss.xml" class="text-white hover:text-gray-400 font-normal"
 						>RSS Feed</a
