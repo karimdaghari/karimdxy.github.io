@@ -14,17 +14,6 @@
 				</g-link>
 			</div>
 			<div class="markdown-body mb-8" v-html="$page.post.content" />
-			<div class="mb-8">
-				<a
-					:href="
-						`https://twitter.com/intent/tweet?screen_name=karimdxy&ref_src=twsrc%5Etfw&text=${tweetText}`
-					"
-					class="font-bold uppercase"
-					data-show-count="false"
-				>
-					Tweet at me / reply
-				</a>
-			</div>
 		</div>
 	</Layout>
 </template>
@@ -44,18 +33,11 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-const { siteUrl } = require("../../constants");
 export default {
 	metaInfo() {
 		return {
-			title: this.$page.post.title,
-			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }]
+			title: this.$page.post.title
 		};
-	},
-	computed: {
-		tweetText() {
-			return siteUrl + this.$route.path;
-		}
 	}
 };
 </script>
