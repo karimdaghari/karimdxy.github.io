@@ -44,7 +44,7 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
-import { siteUrl } from "../../constants";
+const { siteUrl } = require("../../constants");
 export default {
 	metaInfo() {
 		return {

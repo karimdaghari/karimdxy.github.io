@@ -8,7 +8,7 @@ const tailwind = require("tailwindcss");
 const purgecss = require("@fullhuman/postcss-purgecss");
 
 const postcssPlugins = [tailwind()];
-import { siteUrl } from "./constants";
+const { siteUrl } = require("./constants");
 if (process.env.NODE_ENV === "production") postcssPlugins.push(purgecss());
 
 module.exports = {

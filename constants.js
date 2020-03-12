@@ -1,1 +1,3 @@
-export const siteUrl = "https://karimdxy.github.io";
+module.exports = {
+	siteUrl: "https://karimdxy.github.io"
+};
