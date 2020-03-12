@@ -19,15 +19,31 @@
 				</div>
 			</div>
 			<ul class="flex items-center">
-				<li v-for="f in follow" :key="f.name" class="mr-3">
+				<li v-for="(f, i) in follow" :key="i" class="mr-3">
 					<a
-						:href="
-							`https://${f.name.toLowerCase()}.com/${f.prefix || ''}karimdxy`
-						"
+						:href="`https://${f.toLowerCase()}.com/karimdxy`"
+						target="_blank"
+						class="text-white hover:text-white hover:underline"
+						v-text="f"
+					>
+					</a>
+				</li>
+				<li class="mr-3">
+					<a
+						href="https://t.me/karimdxy"
 						target="_blank"
 						class="text-white hover:text-white hover:underline"
 					>
-						{{ f.name }}
+						Telegram
+					</a>
+				</li>
+				<li class="mr-3">
+					<a
+						href="https://linkedin.com/in/karimdxy"
+						target="_blank"
+						class="text-white hover:text-white hover:underline"
+					>
+						LinkedIn
 					</a>
 				</li>
 			</ul>
@@ -39,21 +55,7 @@
 export default {
 	name: "Footer",
 	data: () => ({
-		follow: [
-			{
-				name: "Twitter"
-			},
-			{
-				name: "Telegram"
-			},
-			{
-				name: "Facebook"
-			},
-			{
-				name: "LinkedIn",
-				prefix: "in/"
-			}
-		]
+		follow: ["Twitter", "Facebook", "Github"]
 	})
 };
 </script>
