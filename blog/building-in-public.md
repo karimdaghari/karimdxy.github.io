@@ -2,7 +2,7 @@
 title: Building in public
 path: /building-in-public
 date: 2020-03-12
-summary: Why build a product in public.
+summary: Why I decided to build in public.
 tags: ["Eggnite", "startups"]
 ---
 
